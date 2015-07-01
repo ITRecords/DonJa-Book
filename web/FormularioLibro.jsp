@@ -22,9 +22,9 @@
 	</script>
 </head>
 <body>
-	<form id="miformulario" action="InsertarLibro.jsp">
+	<form id="miformulario" action="insertarLibro.jsp">
 		<fieldset>
-			<legend>Formulario alta libro</legend>
+                <legend>Formulario alta libro</legend>
 		<p><label for="isbn">ISBN:</label> <input type="text" id="isbn" name="isbn"/></p>
 		<p><label for="titulo">Titulo:</label> <input type="text" id="titulo" name="titulo"/></p>
 		<p><label for="categoria">Categoria:</label> <input type="text" id="categoria" name="categoria"/></p>
