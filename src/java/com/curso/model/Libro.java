@@ -46,6 +46,11 @@ public class Libro {
         return ejecutarOperacion(String.format("delete from libros where isbn = '%s'", isbn));
     }
 
+    public Libro findByIsbn(String isbn) {
+        List<Libro> list = ejecutarConsulta(String.format("select isbn,titulo,categoria from libros where isbn = '%s'", isbn),Libro.class);
+        return list.get(0);
+    }
+    
     public static List<Libro> listar() {
         return ejecutarConsulta("select isbn, titulo, categoria from libros", Libro.class);
     }
