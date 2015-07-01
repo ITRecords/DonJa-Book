@@ -14,7 +14,7 @@ public class DataBaseHelper<T> {
 
     private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
     private static final String URL_CONEXION = "jdbc:oracle:thin:@localhost:1521:XE";
-    private static final String USUARIO = "Arquitecto";
+    private static final String USUARIO = "Arquitectura";
     private static final String PASSWORD = "daniel";
 
     public int modificarRegistro(String sql) {
