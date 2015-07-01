@@ -29,7 +29,7 @@
            <label>Titulo</label> 
            <input type="text" id="titulo" name="titulo"  value="<%=libro.getTitulo() %>"><br>
            <label>Categoria</label> 
-           <select id="categoria">
+           <select id="categoria" name="categoria">
                <option value="n/a">Seleccione</option>
                <%                
                for(String categoria:categorias)
@@ -37,13 +37,13 @@
                 if(categoria.equals(libro.getCategoria()))
                	{
                	%>
-                       <option selected value="<%=categoria%> "><%=categoria%></option>	
+                       <option selected value="<%=categoria%>"><%=categoria%></option>	
                    	<%
                	}
                	else
                	{
                	%>
-                       <option value="<%=categoria%> "><%=categoria%></option>	
+                       <option value="<%=categoria%>"><%=categoria%></option>	
                    	<%
                	}
                }
